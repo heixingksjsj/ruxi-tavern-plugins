@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "plugins": [
+    {
+      "id": "ruxi-summarize",
+      "name": "消息摘要",
+      "description": "逐条摘要聊天消息，把长对话压缩后静默注入上下文，缓解长对话撞上下文上限。生成结束后自动摘要，也可手动指定消息；消息被编辑后摘要自动标记失效。",
+      "author": "Ruxi",
+      "repo": "https://github.com/heixingksjsj/ruxi-tavern-plugins/tree/main/summarize",
+      "version": "1.0.0",
+      "compat": "ok",
+      "tags": [
+        "记忆",
+        "上下文",
+        "摘要"
+      ]
+    },
+    {
+      "id": "ruxi-deeplore",
+      "name": "世界书诊断器",
+      "description": "逐条回答「这个世界书条目为什么没生效」：关键词没命中、被次要关键词规则挡下、被停用、还是没设关键词。本地复算宿主匹配规则，结论与宿主逐例一致，不改动世界书也不影响生成。",
+      "author": "Ruxi",
+      "repo": "https://github.com/heixingksjsj/ruxi-tavern-plugins/tree/main/deeplore",
+      "version": "1.0.0",
+      "compat": "ok",
+      "tags": [
+        "世界书",
+        "诊断",
+        "排查"
+      ]
+    }
+  ]
+}
