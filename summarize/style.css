@@ -1,0 +1,157 @@
+/* 消息摘要（ruxi-summarize）—— 面板样式
+ * 运行时由宿主注入 iframe；JS 里也内嵌了一份等价 CSS 作为兜底
+ * （宿主未来若不再自动加载 css 字段，功能仍可用）。 */
+.rs-wrap {
+  font: 14px/1.6 system-ui, -apple-system, 'PingFang SC', sans-serif;
+  color: #2b2b2b;
+  padding: 12px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.rs-card {
+  background: #fff;
+  border: 1px solid #e8e2da;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.rs-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.rs-row:last-child {
+  margin-bottom: 0;
+}
+.rs-label {
+  font-size: 13px;
+  color: #6b6b6b;
+  min-width: 76px;
+}
+.rs-btn {
+  appearance: none;
+  border: 1px solid #e0d8ce;
+  background: #fff;
+  color: #2b2b2b;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.rs-btn:hover {
+  background: #faf7f3;
+}
+.rs-btn:active {
+  transform: scale(0.98);
+}
+.rs-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.rs-btn.primary {
+  background: #e8654a;
+  border-color: #e8654a;
+  color: #fff;
+  font-weight: 600;
+}
+.rs-btn.primary:hover {
+  background: #d4553c;
+}
+.rs-btn.mini {
+  padding: 3px 9px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.rs-btn.danger {
+  color: #c0392b;
+  border-color: #f0d5d0;
+}
+.rs-inp {
+  border: 1px solid #e0d8ce;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  background: #fff;
+  color: #2b2b2b;
+}
+.rs-num {
+  width: 74px;
+}
+.rs-ta {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 76px;
+  resize: vertical;
+  border: 1px solid #e0d8ce;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: 13px/1.6 inherit;
+  background: #fff;
+  color: #2b2b2b;
+}
+.rs-list {
+  margin-top: 6px;
+}
+.rs-item {
+  border: 1px solid #eee7df;
+  border-radius: 9px;
+  padding: 9px 11px;
+  margin-bottom: 8px;
+  background: #fdfcfa;
+}
+.rs-item-h {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.rs-idx {
+  font-size: 12px;
+  color: #9a9188;
+}
+.rs-sum {
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.rs-empty {
+  color: #9a9188;
+  font-size: 13px;
+  text-align: center;
+  padding: 22px 0;
+}
+.rs-err {
+  color: #c0392b;
+  font-size: 12px;
+}
+.rs-status {
+  font-size: 12px;
+  color: #8a8178;
+  min-height: 18px;
+  margin-bottom: 6px;
+}
+.rs-tip {
+  font-size: 12px;
+  color: #9a9188;
+  line-height: 1.65;
+  margin-top: 6px;
+}
+.rs-sw {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+.rs-sw input {
+  width: 15px;
+  height: 15px;
+  accent-color: #e8654a;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "消息摘要",
+  "version": "1.0.0",
+  "description": "为每条消息生成摘要，把短/长期摘要注入对话上下文，长对话省下大量 token 又不丢剧情。参考酒馆 MessageSummarize 的功能重新实现。",
+  "author": "Ruxi",
+  "js": "index.js",
+  "css": ["style.css"]
+}

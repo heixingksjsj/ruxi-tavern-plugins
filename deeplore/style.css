@@ -1,0 +1,157 @@
+/* 世界书诊断器（ruxi-worldbook）—— 面板样式
+ * 运行时由宿主注入 iframe；JS 里也内嵌了一份等价 CSS 作为兜底
+ * （宿主未来若不再自动加载 css 字段，功能仍可用）。 */
+.rw-wrap {
+  font: 14px/1.6 system-ui, -apple-system, 'PingFang SC', sans-serif;
+  color: #2b2b2b;
+  padding: 12px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.rw-card {
+  background: #fff;
+  border: 1px solid #e8e2da;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.rw-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.rw-row:last-child {
+  margin-bottom: 0;
+}
+.rw-label {
+  font-size: 13px;
+  color: #6b6b6b;
+  min-width: 76px;
+}
+.rw-btn {
+  appearance: none;
+  border: 1px solid #e0d8ce;
+  background: #fff;
+  color: #2b2b2b;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.rw-btn:hover {
+  background: #faf7f3;
+}
+.rw-btn:active {
+  transform: scale(0.98);
+}
+.rw-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.rw-btn.primary {
+  background: #e8654a;
+  border-color: #e8654a;
+  color: #fff;
+  font-weight: 600;
+}
+.rw-btn.primary:hover {
+  background: #d4553c;
+}
+.rw-btn.mini {
+  padding: 3px 9px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.rw-btn.danger {
+  color: #c0392b;
+  border-color: #f0d5d0;
+}
+.rw-inp {
+  border: 1px solid #e0d8ce;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  background: #fff;
+  color: #2b2b2b;
+}
+.rw-num {
+  width: 74px;
+}
+.rw-ta {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 76px;
+  resize: vertical;
+  border: 1px solid #e0d8ce;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: 13px/1.6 inherit;
+  background: #fff;
+  color: #2b2b2b;
+}
+.rw-list {
+  margin-top: 6px;
+}
+.rw-item {
+  border: 1px solid #eee7df;
+  border-radius: 9px;
+  padding: 9px 11px;
+  margin-bottom: 8px;
+  background: #fdfcfa;
+}
+.rw-item-h {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.rw-idx {
+  font-size: 12px;
+  color: #9a9188;
+}
+.rw-sum {
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.rw-empty {
+  color: #9a9188;
+  font-size: 13px;
+  text-align: center;
+  padding: 22px 0;
+}
+.rw-err {
+  color: #c0392b;
+  font-size: 12px;
+}
+.rw-status {
+  font-size: 12px;
+  color: #8a8178;
+  min-height: 18px;
+  margin-bottom: 6px;
+}
+.rw-tip {
+  font-size: 12px;
+  color: #9a9188;
+  line-height: 1.65;
+  margin-top: 6px;
+}
+.rw-sw {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+.rw-sw input {
+  width: 15px;
+  height: 15px;
+  accent-color: #e8654a;
+}
